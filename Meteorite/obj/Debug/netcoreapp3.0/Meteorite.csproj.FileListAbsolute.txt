@@ -1,0 +1,10 @@
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\bin\Debug\netcoreapp3.0\Meteorite.deps.json
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\bin\Debug\netcoreapp3.0\Meteorite.dll
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\obj\Debug\netcoreapp3.0\Meteorite.AssemblyInfoInputs.cache
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\obj\Debug\netcoreapp3.0\Meteorite.AssemblyInfo.cs
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\bin\Debug\netcoreapp3.0\Meteorite.pdb
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\obj\Debug\netcoreapp3.0\Meteorite.dll
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\obj\Debug\netcoreapp3.0\Meteorite.pdb
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\bin\Debug\netcoreapp3.0\DataFiles\MeteoriteLandings.json
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\bin\Debug\netcoreapp3.0\DataFiles\MeteoriteLandingsLarge.json
+C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\Meteorite\obj\Debug\netcoreapp3.0\Meteorite.csprojAssemblyReference.cache

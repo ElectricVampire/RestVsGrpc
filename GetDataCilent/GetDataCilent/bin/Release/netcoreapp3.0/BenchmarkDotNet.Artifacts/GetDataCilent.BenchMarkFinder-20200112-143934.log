@@ -1,0 +1,542 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 8 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b
+// command took 2.93s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b
+// command took 4.6s and exited with 0
+// ***** Done, took 00:00:07 (7.83 sec)   *****
+// Found 8 benchmarks:
+//   BenchMarkFinder.RestGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+//   BenchMarkFinder.RestGetLargePayloadAsync: DefaultJob [IterationCount=100]
+//   BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+//   BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=100]
+//   BenchMarkFinder.RestGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+//   BenchMarkFinder.RestGetLargePayloadAsync: DefaultJob [IterationCount=200]
+//   BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+//   BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=200]
+
+// **************************
+// Benchmark: BenchMarkFinder.RestGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.RestGetSmallPayloadAsync(IterationCount: 100)" --job "Default" --benchmarkId 0 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 581358.80 ns, 581.3588 us/op
+WorkloadJitting  1: 1 op, 4727721819.39 ns, 4.7277 s/op
+
+WorkloadWarmup   1: 1 op, 3933211343.90 ns, 3.9332 s/op
+WorkloadWarmup   2: 1 op, 3882595134.30 ns, 3.8826 s/op
+WorkloadWarmup   3: 1 op, 3853370749.63 ns, 3.8534 s/op
+WorkloadWarmup   4: 1 op, 3881377940.49 ns, 3.8814 s/op
+WorkloadWarmup   5: 1 op, 3880126384.78 ns, 3.8801 s/op
+WorkloadWarmup   6: 1 op, 3852372578.08 ns, 3.8524 s/op
+WorkloadWarmup   7: 1 op, 3886620506.24 ns, 3.8866 s/op
+WorkloadWarmup   8: 1 op, 3889969255.87 ns, 3.8900 s/op
+WorkloadWarmup   9: 1 op, 3865298522.58 ns, 3.8653 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 4422059228.20 ns, 4.4221 s/op
+WorkloadActual   2: 1 op, 4251360158.90 ns, 4.2514 s/op
+WorkloadActual   3: 1 op, 3861923791.99 ns, 3.8619 s/op
+WorkloadActual   4: 1 op, 3847074139.31 ns, 3.8471 s/op
+WorkloadActual   5: 1 op, 3935410506.08 ns, 3.9354 s/op
+WorkloadActual   6: 1 op, 3918929919.86 ns, 3.9189 s/op
+WorkloadActual   7: 1 op, 3914113385.92 ns, 3.9141 s/op
+WorkloadActual   8: 1 op, 3815122592.40 ns, 3.8151 s/op
+WorkloadActual   9: 1 op, 3884142537.67 ns, 3.8841 s/op
+WorkloadActual  10: 1 op, 3809784204.42 ns, 3.8098 s/op
+WorkloadActual  11: 1 op, 3882729788.28 ns, 3.8827 s/op
+WorkloadActual  12: 1 op, 3869012123.05 ns, 3.8690 s/op
+WorkloadActual  13: 1 op, 3876080619.18 ns, 3.8761 s/op
+WorkloadActual  14: 1 op, 3864502052.64 ns, 3.8645 s/op
+WorkloadActual  15: 1 op, 3858324451.85 ns, 3.8583 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3861923791.99 ns, 3.8619 s/op
+WorkloadResult   2: 1 op, 3847074139.31 ns, 3.8471 s/op
+WorkloadResult   3: 1 op, 3935410506.08 ns, 3.9354 s/op
+WorkloadResult   4: 1 op, 3918929919.86 ns, 3.9189 s/op
+WorkloadResult   5: 1 op, 3914113385.92 ns, 3.9141 s/op
+WorkloadResult   6: 1 op, 3815122592.40 ns, 3.8151 s/op
+WorkloadResult   7: 1 op, 3884142537.67 ns, 3.8841 s/op
+WorkloadResult   8: 1 op, 3809784204.42 ns, 3.8098 s/op
+WorkloadResult   9: 1 op, 3882729788.28 ns, 3.8827 s/op
+WorkloadResult  10: 1 op, 3869012123.05 ns, 3.8690 s/op
+WorkloadResult  11: 1 op, 3876080619.18 ns, 3.8761 s/op
+WorkloadResult  12: 1 op, 3864502052.64 ns, 3.8645 s/op
+WorkloadResult  13: 1 op, 3858324451.85 ns, 3.8583 s/op
+
+// AfterAll
+// Benchmark Process 4600 has exited with code 0
+
+Mean = 3.8721 s, StdErr = 0.0102 s (0.26%); N = 13, StdDev = 0.0369 s
+Min = 3.8098 s, Q1 = 3.8527 s, Median = 3.8690 s, Q3 = 3.8991 s, Max = 3.9354 s
+IQR = 0.0464 s, LowerFence = 3.7831 s, UpperFence = 3.9688 s
+ConfidenceInterval = [3.8279 s; 3.9163 s] (CI 99.9%), Margin = 0.0442 s (1.14% of Mean)
+Skewness = -0.02, Kurtosis = 2.07, MValue = 2
+
+// **************************
+// Benchmark: BenchMarkFinder.RestGetLargePayloadAsync: DefaultJob [IterationCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.RestGetLargePayloadAsync(IterationCount: 100)" --job "Default" --benchmarkId 1 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 455644.50 ns, 455.6445 us/op
+WorkloadJitting  1: 1 op, 4664858243.16 ns, 4.6649 s/op
+
+WorkloadWarmup   1: 1 op, 4219644396.15 ns, 4.2196 s/op
+WorkloadWarmup   2: 1 op, 4150074380.96 ns, 4.1501 s/op
+WorkloadWarmup   3: 1 op, 3831231343.65 ns, 3.8312 s/op
+WorkloadWarmup   4: 1 op, 3852928514.66 ns, 3.8529 s/op
+WorkloadWarmup   5: 1 op, 3897992063.24 ns, 3.8980 s/op
+WorkloadWarmup   6: 1 op, 3915169944.78 ns, 3.9152 s/op
+WorkloadWarmup   7: 1 op, 3943731675.39 ns, 3.9437 s/op
+WorkloadWarmup   8: 1 op, 3921648980.53 ns, 3.9216 s/op
+WorkloadWarmup   9: 1 op, 3937968373.08 ns, 3.9380 s/op
+WorkloadWarmup  10: 1 op, 3863097963.57 ns, 3.8631 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 3890037141.59 ns, 3.8900 s/op
+WorkloadActual   2: 1 op, 3857227385.04 ns, 3.8572 s/op
+WorkloadActual   3: 1 op, 3829809933.94 ns, 3.8298 s/op
+WorkloadActual   4: 1 op, 3951382368.43 ns, 3.9514 s/op
+WorkloadActual   5: 1 op, 3930247838.76 ns, 3.9302 s/op
+WorkloadActual   6: 1 op, 3816550706.86 ns, 3.8166 s/op
+WorkloadActual   7: 1 op, 3834618645.67 ns, 3.8346 s/op
+WorkloadActual   8: 1 op, 4223974276.06 ns, 4.2240 s/op
+WorkloadActual   9: 1 op, 4070501139.11 ns, 4.0705 s/op
+WorkloadActual  10: 1 op, 3865324782.90 ns, 3.8653 s/op
+WorkloadActual  11: 1 op, 3919218224.66 ns, 3.9192 s/op
+WorkloadActual  12: 1 op, 3884822232.99 ns, 3.8848 s/op
+WorkloadActual  13: 1 op, 3899885320.62 ns, 3.8999 s/op
+WorkloadActual  14: 1 op, 3915664421.04 ns, 3.9157 s/op
+WorkloadActual  15: 1 op, 3835199725.10 ns, 3.8352 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 3890037141.59 ns, 3.8900 s/op
+WorkloadResult   2: 1 op, 3857227385.04 ns, 3.8572 s/op
+WorkloadResult   3: 1 op, 3829809933.94 ns, 3.8298 s/op
+WorkloadResult   4: 1 op, 3951382368.43 ns, 3.9514 s/op
+WorkloadResult   5: 1 op, 3930247838.76 ns, 3.9302 s/op
+WorkloadResult   6: 1 op, 3816550706.86 ns, 3.8166 s/op
+WorkloadResult   7: 1 op, 3834618645.67 ns, 3.8346 s/op
+WorkloadResult   8: 1 op, 4070501139.11 ns, 4.0705 s/op
+WorkloadResult   9: 1 op, 3865324782.90 ns, 3.8653 s/op
+WorkloadResult  10: 1 op, 3919218224.66 ns, 3.9192 s/op
+WorkloadResult  11: 1 op, 3884822232.99 ns, 3.8848 s/op
+WorkloadResult  12: 1 op, 3899885320.62 ns, 3.8999 s/op
+WorkloadResult  13: 1 op, 3915664421.04 ns, 3.9157 s/op
+WorkloadResult  14: 1 op, 3835199725.10 ns, 3.8352 s/op
+
+// AfterAll
+// Benchmark Process 12140 has exited with code 0
+
+Mean = 3.8929 s, StdErr = 0.0176 s (0.45%); N = 14, StdDev = 0.0658 s
+Min = 3.8166 s, Q1 = 3.8352 s, Median = 3.8874 s, Q3 = 3.9192 s, Max = 4.0705 s
+IQR = 0.0840 s, LowerFence = 3.7092 s, UpperFence = 4.0452 s
+ConfidenceInterval = [3.8187 s; 3.9671 s] (CI 99.9%), Margin = 0.0742 s (1.91% of Mean)
+Skewness = 1.19, Kurtosis = 4.13, MValue = 2
+
+// **************************
+// Benchmark: BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.GrpcGetSmallPayloadAsync(IterationCount: 100)" --job "Default" --benchmarkId 2 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 536660.39 ns, 536.6604 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Grpc.Core.RpcException: Status(StatusCode=Internal, Detail="Error starting gRPC call: No connection could be made because the target machine actively refused it.")
+   at GetDataCilent.GrpcClient.GetSmallPayLoad() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\GrpcClient.cs:line 23
+   at GetDataCilent.BenchMarkFinder.GrpcGetSmallPayloadAsync() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\BenchMarkFinder.cs:line 43
+   at BenchmarkDotNet.Autogenerated.Runnable_2.<.ctor>b__3_4() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 1479
+   at BenchmarkDotNet.Autogenerated.Runnable_2.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 2041
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_2.Run(IHost host, String benchmarkName) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 1458
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 55
+// AfterAll
+ExitCode != 0
+// Benchmark Process 8216 has exited with code -1
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.GrpcGetLargePayloadAsync(IterationCount: 100)" --job "Default" --benchmarkId 3 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 541409.59 ns, 541.4096 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Grpc.Core.RpcException: Status(StatusCode=Internal, Detail="Error starting gRPC call: No connection could be made because the target machine actively refused it.")
+   at GetDataCilent.GrpcClient.GetLargePayLoad() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\GrpcClient.cs:line 30
+   at GetDataCilent.BenchMarkFinder.GrpcGetLargePayloadAsync() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\BenchMarkFinder.cs:line 52
+   at BenchmarkDotNet.Autogenerated.Runnable_3.<.ctor>b__3_4() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 2123
+   at BenchmarkDotNet.Autogenerated.Runnable_3.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 2685
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_3.Run(IHost host, String benchmarkName) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 2102
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 55
+// AfterAll
+ExitCode != 0
+// Benchmark Process 10012 has exited with code -1
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: BenchMarkFinder.RestGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.RestGetSmallPayloadAsync(IterationCount: 200)" --job "Default" --benchmarkId 4 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 489447.68 ns, 489.4477 us/op
+WorkloadJitting  1: 1 op, 8816049525.85 ns, 8.8160 s/op
+
+WorkloadWarmup   1: 1 op, 7698291263.28 ns, 7.6983 s/op
+WorkloadWarmup   2: 1 op, 7720913691.54 ns, 7.7209 s/op
+WorkloadWarmup   3: 1 op, 8098967047.49 ns, 8.0990 s/op
+WorkloadWarmup   4: 1 op, 8048725745.87 ns, 8.0487 s/op
+WorkloadWarmup   5: 1 op, 7689389573.26 ns, 7.6894 s/op
+WorkloadWarmup   6: 1 op, 7871373317.00 ns, 7.8714 s/op
+WorkloadWarmup   7: 1 op, 7782562029.53 ns, 7.7826 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 7809031874.16 ns, 7.8090 s/op
+WorkloadActual   2: 1 op, 7776622447.83 ns, 7.7766 s/op
+WorkloadActual   3: 1 op, 7715947697.26 ns, 7.7159 s/op
+WorkloadActual   4: 1 op, 7571245786.82 ns, 7.5712 s/op
+WorkloadActual   5: 1 op, 8423776485.56 ns, 8.4238 s/op
+WorkloadActual   6: 1 op, 8047426977.45 ns, 8.0474 s/op
+WorkloadActual   7: 1 op, 7968696580.15 ns, 7.9687 s/op
+WorkloadActual   8: 1 op, 7793099122.93 ns, 7.7931 s/op
+WorkloadActual   9: 1 op, 7709526490.10 ns, 7.7095 s/op
+WorkloadActual  10: 1 op, 7919141678.62 ns, 7.9191 s/op
+WorkloadActual  11: 1 op, 7816630605.29 ns, 7.8166 s/op
+WorkloadActual  12: 1 op, 7762310293.63 ns, 7.7623 s/op
+WorkloadActual  13: 1 op, 8487503858.73 ns, 8.4875 s/op
+WorkloadActual  14: 1 op, 7714514833.59 ns, 7.7145 s/op
+WorkloadActual  15: 1 op, 7621850542.46 ns, 7.6219 s/op
+WorkloadActual  16: 1 op, 7644720208.85 ns, 7.6447 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 7809031874.16 ns, 7.8090 s/op
+WorkloadResult   2: 1 op, 7776622447.83 ns, 7.7766 s/op
+WorkloadResult   3: 1 op, 7715947697.26 ns, 7.7159 s/op
+WorkloadResult   4: 1 op, 7571245786.82 ns, 7.5712 s/op
+WorkloadResult   5: 1 op, 8047426977.45 ns, 8.0474 s/op
+WorkloadResult   6: 1 op, 7968696580.15 ns, 7.9687 s/op
+WorkloadResult   7: 1 op, 7793099122.93 ns, 7.7931 s/op
+WorkloadResult   8: 1 op, 7709526490.10 ns, 7.7095 s/op
+WorkloadResult   9: 1 op, 7919141678.62 ns, 7.9191 s/op
+WorkloadResult  10: 1 op, 7816630605.29 ns, 7.8166 s/op
+WorkloadResult  11: 1 op, 7762310293.63 ns, 7.7623 s/op
+WorkloadResult  12: 1 op, 7714514833.59 ns, 7.7145 s/op
+WorkloadResult  13: 1 op, 7621850542.46 ns, 7.6219 s/op
+WorkloadResult  14: 1 op, 7644720208.85 ns, 7.6447 s/op
+
+// AfterAll
+// Benchmark Process 6796 has exited with code 0
+
+Mean = 7.7765 s, StdErr = 0.0355 s (0.46%); N = 14, StdDev = 0.1328 s
+Min = 7.5712 s, Q1 = 7.7095 s, Median = 7.7695 s, Q3 = 7.8166 s, Max = 8.0474 s
+IQR = 0.1071 s, LowerFence = 7.5489 s, UpperFence = 7.9773 s
+ConfidenceInterval = [7.6267 s; 7.9263 s] (CI 99.9%), Margin = 0.1498 s (1.93% of Mean)
+Skewness = 0.45, Kurtosis = 2.27, MValue = 2
+
+// **************************
+// Benchmark: BenchMarkFinder.RestGetLargePayloadAsync: DefaultJob [IterationCount=200]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.RestGetLargePayloadAsync(IterationCount: 200)" --job "Default" --benchmarkId 5 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 709308.03 ns, 709.3080 us/op
+WorkloadJitting  1: 1 op, 8561839563.41 ns, 8.5618 s/op
+
+WorkloadWarmup   1: 1 op, 7801860851.03 ns, 7.8019 s/op
+WorkloadWarmup   2: 1 op, 8533368067.73 ns, 8.5334 s/op
+WorkloadWarmup   3: 1 op, 8442034392.64 ns, 8.4420 s/op
+WorkloadWarmup   4: 1 op, 8466831957.69 ns, 8.4668 s/op
+WorkloadWarmup   5: 1 op, 7686052836.32 ns, 7.6861 s/op
+WorkloadWarmup   6: 1 op, 7804869613.32 ns, 7.8049 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 7683742207.46 ns, 7.6837 s/op
+WorkloadActual   2: 1 op, 7645349897.82 ns, 7.6453 s/op
+WorkloadActual   3: 1 op, 7652156628.85 ns, 7.6522 s/op
+WorkloadActual   4: 1 op, 7671714142.44 ns, 7.6717 s/op
+WorkloadActual   5: 1 op, 7706097562.68 ns, 7.7061 s/op
+WorkloadActual   6: 1 op, 7896231783.65 ns, 7.8962 s/op
+WorkloadActual   7: 1 op, 8257778572.42 ns, 8.2578 s/op
+WorkloadActual   8: 1 op, 7813676598.56 ns, 7.8137 s/op
+WorkloadActual   9: 1 op, 7816312687.79 ns, 7.8163 s/op
+WorkloadActual  10: 1 op, 7702134489.16 ns, 7.7021 s/op
+WorkloadActual  11: 1 op, 7762169493.61 ns, 7.7622 s/op
+WorkloadActual  12: 1 op, 7629966378.41 ns, 7.6300 s/op
+WorkloadActual  13: 1 op, 7727399152.69 ns, 7.7274 s/op
+WorkloadActual  14: 1 op, 7698892177.64 ns, 7.6989 s/op
+WorkloadActual  15: 1 op, 8415826033.76 ns, 8.4158 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 7683742207.46 ns, 7.6837 s/op
+WorkloadResult   2: 1 op, 7645349897.82 ns, 7.6453 s/op
+WorkloadResult   3: 1 op, 7652156628.85 ns, 7.6522 s/op
+WorkloadResult   4: 1 op, 7671714142.44 ns, 7.6717 s/op
+WorkloadResult   5: 1 op, 7706097562.68 ns, 7.7061 s/op
+WorkloadResult   6: 1 op, 7896231783.65 ns, 7.8962 s/op
+WorkloadResult   7: 1 op, 7813676598.56 ns, 7.8137 s/op
+WorkloadResult   8: 1 op, 7816312687.79 ns, 7.8163 s/op
+WorkloadResult   9: 1 op, 7702134489.16 ns, 7.7021 s/op
+WorkloadResult  10: 1 op, 7762169493.61 ns, 7.7622 s/op
+WorkloadResult  11: 1 op, 7629966378.41 ns, 7.6300 s/op
+WorkloadResult  12: 1 op, 7727399152.69 ns, 7.7274 s/op
+WorkloadResult  13: 1 op, 7698892177.64 ns, 7.6989 s/op
+
+// AfterAll
+// Benchmark Process 10204 has exited with code 0
+
+Mean = 7.7235 s, StdErr = 0.0217 s (0.28%); N = 13, StdDev = 0.0784 s
+Min = 7.6300 s, Q1 = 7.6619 s, Median = 7.7021 s, Q3 = 7.7879 s, Max = 7.8962 s
+IQR = 0.1260 s, LowerFence = 7.4730 s, UpperFence = 7.9769 s
+ConfidenceInterval = [7.6297 s; 7.8174 s] (CI 99.9%), Margin = 0.0938 s (1.21% of Mean)
+Skewness = 0.78, Kurtosis = 2.41, MValue = 2
+
+// **************************
+// Benchmark: BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.GrpcGetSmallPayloadAsync(IterationCount: 200)" --job "Default" --benchmarkId 6 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 583873.09 ns, 583.8731 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Grpc.Core.RpcException: Status(StatusCode=Internal, Detail="Error starting gRPC call: No connection could be made because the target machine actively refused it.")
+   at GetDataCilent.GrpcClient.GetSmallPayLoad() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\GrpcClient.cs:line 23
+   at GetDataCilent.BenchMarkFinder.GrpcGetSmallPayloadAsync() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\BenchMarkFinder.cs:line 43
+   at BenchmarkDotNet.Autogenerated.Runnable_6.<.ctor>b__3_4() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 4055
+   at BenchmarkDotNet.Autogenerated.Runnable_6.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 4617
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_6.Run(IHost host, String benchmarkName) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 4034
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 55
+// AfterAll
+ExitCode != 0
+// Benchmark Process 10044 has exited with code -1
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// **************************
+// Benchmark: BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=200]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "f4437a33-a888-42c7-ace7-48d453233c2b.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.GrpcGetLargePayloadAsync(IterationCount: 200)" --job "Default" --benchmarkId 7 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 521574.67 ns, 521.5747 us/op
+
+System.Reflection.TargetInvocationException: Exception has been thrown by the target of an invocation.
+ ---> Grpc.Core.RpcException: Status(StatusCode=Internal, Detail="Error starting gRPC call: No connection could be made because the target machine actively refused it.")
+   at GetDataCilent.GrpcClient.GetLargePayLoad() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\GrpcClient.cs:line 30
+   at GetDataCilent.BenchMarkFinder.GrpcGetLargePayloadAsync() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\BenchMarkFinder.cs:line 52
+   at BenchmarkDotNet.Autogenerated.Runnable_7.<.ctor>b__3_4() in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 4699
+   at BenchmarkDotNet.Autogenerated.Runnable_7.WorkloadActionNoUnroll(Int64 invokeCount) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 5261
+   at BenchmarkDotNet.Engines.Engine.RunIteration(IterationData data)
+   at BenchmarkDotNet.Engines.EngineFactory.Jit(Engine engine, Int32 jitIndex, Int32 invokeCount, Int32 unrollFactor)
+   at BenchmarkDotNet.Engines.EngineFactory.CreateReadyToRun(EngineParameters engineParameters)
+   at BenchmarkDotNet.Autogenerated.Runnable_7.Run(IHost host, String benchmarkName) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 4678
+   --- End of inner exception stack trace ---
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Object[] arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at System.Reflection.MethodBase.Invoke(Object obj, Object[] parameters)
+   at BenchmarkDotNet.Autogenerated.UniqueProgramName.AfterAssemblyLoadingAttached(String[] args) in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\f4437a33-a888-42c7-ace7-48d453233c2b\f4437a33-a888-42c7-ace7-48d453233c2b.notcs:line 55
+// AfterAll
+ExitCode != 0
+// Benchmark Process 2172 has exited with code -1
+No more Benchmark runs will be launched as NO measurements were obtained from the previous run!
+
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.csv
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report-github.md
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.html
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.asciidoc
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.csv
+
+// * Detailed results *
+BenchMarkFinder.RestGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 3.8721 s, StdErr = 0.0102 s (0.26%); N = 13, StdDev = 0.0369 s
+Min = 3.8098 s, Q1 = 3.8527 s, Median = 3.8690 s, Q3 = 3.8991 s, Max = 3.9354 s
+IQR = 0.0464 s, LowerFence = 3.7831 s, UpperFence = 3.9688 s
+ConfidenceInterval = [3.8279 s; 3.9163 s] (CI 99.9%), Margin = 0.0442 s (1.14% of Mean)
+Skewness = -0.02, Kurtosis = 2.07, MValue = 2
+-------------------- Histogram --------------------
+[3.796 s ; 3.949 s) | @@@@@@@@@@@@@
+---------------------------------------------------
+
+BenchMarkFinder.RestGetLargePayloadAsync: DefaultJob [IterationCount=100]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 3.8929 s, StdErr = 0.0176 s (0.45%); N = 14, StdDev = 0.0658 s
+Min = 3.8166 s, Q1 = 3.8352 s, Median = 3.8874 s, Q3 = 3.9192 s, Max = 4.0705 s
+IQR = 0.0840 s, LowerFence = 3.7092 s, UpperFence = 4.0452 s
+ConfidenceInterval = [3.8187 s; 3.9671 s] (CI 99.9%), Margin = 0.0742 s (1.91% of Mean)
+Skewness = 1.19, Kurtosis = 4.13, MValue = 2
+-------------------- Histogram --------------------
+[3.793 s ; 3.947 s) | @@@@@@@@@@@@
+[3.947 s ; 4.094 s) | @@
+---------------------------------------------------
+
+BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+Runtime = ; GC = 
+There are not any results runs
+
+BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=100]
+Runtime = ; GC = 
+There are not any results runs
+
+BenchMarkFinder.RestGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 7.7765 s, StdErr = 0.0355 s (0.46%); N = 14, StdDev = 0.1328 s
+Min = 7.5712 s, Q1 = 7.7095 s, Median = 7.7695 s, Q3 = 7.8166 s, Max = 8.0474 s
+IQR = 0.1071 s, LowerFence = 7.5489 s, UpperFence = 7.9773 s
+ConfidenceInterval = [7.6267 s; 7.9263 s] (CI 99.9%), Margin = 0.1498 s (1.93% of Mean)
+Skewness = 0.45, Kurtosis = 2.27, MValue = 2
+-------------------- Histogram --------------------
+[7.523 s ; 7.829 s) | @@@@@@@@@@@
+[7.829 s ; 8.096 s) | @@@
+---------------------------------------------------
+
+BenchMarkFinder.RestGetLargePayloadAsync: DefaultJob [IterationCount=200]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 7.7235 s, StdErr = 0.0217 s (0.28%); N = 13, StdDev = 0.0784 s
+Min = 7.6300 s, Q1 = 7.6619 s, Median = 7.7021 s, Q3 = 7.7879 s, Max = 7.8962 s
+IQR = 0.1260 s, LowerFence = 7.4730 s, UpperFence = 7.9769 s
+ConfidenceInterval = [7.6297 s; 7.8174 s] (CI 99.9%), Margin = 0.0938 s (1.21% of Mean)
+Skewness = 0.78, Kurtosis = 2.41, MValue = 2
+-------------------- Histogram --------------------
+[7.601 s ; 7.756 s) | @@@@@@@@@
+[7.756 s ; 7.925 s) | @@@@
+---------------------------------------------------
+
+BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+Runtime = ; GC = 
+There are not any results runs
+
+BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=200]
+Runtime = ; GC = 
+There are not any results runs
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.17763.316 (1809/October2018Update/Redstone5)
+Intel Xeon Platinum 8259CL CPU 2.50GHz, 1 CPU, 2 logical cores and 1 physical core
+Frequency=3579545 Hz, Resolution=279.3651 ns, Timer=ACPI
+.NET Core SDK=3.0.100
+  [Host]     : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+  DefaultJob : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+
+
+|                   Method | IterationCount |    Mean |    Error |   StdDev |
+|------------------------- |--------------- |--------:|---------:|---------:|
+| RestGetSmallPayloadAsync |            100 | 3.872 s | 0.0442 s | 0.0369 s |
+| RestGetLargePayloadAsync |            100 | 3.893 s | 0.0742 s | 0.0658 s |
+| GrpcGetSmallPayloadAsync |            100 |      NA |       NA |       NA |
+| GrpcGetLargePayloadAsync |            100 |      NA |       NA |       NA |
+| RestGetSmallPayloadAsync |            200 | 7.776 s | 0.1498 s | 0.1328 s |
+| RestGetLargePayloadAsync |            200 | 7.724 s | 0.0938 s | 0.0784 s |
+| GrpcGetSmallPayloadAsync |            200 |      NA |       NA |       NA |
+| GrpcGetLargePayloadAsync |            200 |      NA |       NA |       NA |
+
+Benchmarks with issues:
+  BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+  BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=100]
+  BenchMarkFinder.GrpcGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+  BenchMarkFinder.GrpcGetLargePayloadAsync: DefaultJob [IterationCount=200]
+
+// * Hints *
+Outliers
+  BenchMarkFinder.RestGetSmallPayloadAsync: Default -> 2 outliers were removed (4.25 s, 4.42 s)
+  BenchMarkFinder.RestGetLargePayloadAsync: Default -> 1 outlier  was  removed (4.22 s)
+  BenchMarkFinder.RestGetSmallPayloadAsync: Default -> 2 outliers were removed (8.42 s, 8.49 s)
+  BenchMarkFinder.RestGetLargePayloadAsync: Default -> 2 outliers were removed (8.26 s, 8.42 s)
+
+// * Legends *
+  IterationCount : Value of the 'IterationCount' parameter
+  Mean           : Arithmetic mean of all measurements
+  Error          : Half of 99.9% confidence interval
+  StdDev         : Standard deviation of all measurements
+  1 s            : 1 Second (1 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:09:40 (580.15 sec), executed benchmarks: 8
+
+Global total time: 00:09:48 (588 sec), executed benchmarks: 8
+// * Artifacts cleanup *

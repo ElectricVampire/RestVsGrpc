@@ -1,0 +1,366 @@
+// Validating benchmarks:
+// ***** BenchmarkRunner: Start   *****
+// ***** Found 4 benchmark(s) in total *****
+// ***** Building 1 exe(s) in Parallel: Start   *****
+// start dotnet restore  /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\dcc1a241-ade0-4dcf-88e0-7fe10b482017
+// command took 14.61s and exited with 0
+// start dotnet build -c Release  --no-restore /p:UseSharedCompilation=false /p:BuildInParallel=false /m:1 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\dcc1a241-ade0-4dcf-88e0-7fe10b482017
+// command took 39.62s and exited with 0
+// ***** Done, took 00:00:55 (55.98 sec)   *****
+// Found 4 benchmarks:
+//   BenchMarkFinder.NugetGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+//   BenchMarkFinder.NugetGetLargePayloadAsync: DefaultJob [IterationCount=100]
+//   BenchMarkFinder.NugetGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+//   BenchMarkFinder.NugetGetLargePayloadAsync: DefaultJob [IterationCount=200]
+
+// **************************
+// Benchmark: BenchMarkFinder.NugetGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "dcc1a241-ade0-4dcf-88e0-7fe10b482017.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.NugetGetSmallPayloadAsync(IterationCount: 100)" --job "Default" --benchmarkId 0 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\dcc1a241-ade0-4dcf-88e0-7fe10b482017\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 682488.98 ns, 682.4890 us/op
+WorkloadJitting  1: 1 op, 4900774819.15 ns, 4.9008 s/op
+
+WorkloadWarmup   1: 1 op, 2163167944.53 ns, 2.1632 s/op
+WorkloadWarmup   2: 1 op, 2192479770.47 ns, 2.1925 s/op
+WorkloadWarmup   3: 1 op, 2162092947.57 ns, 2.1621 s/op
+WorkloadWarmup   4: 1 op, 2186303287.15 ns, 2.1863 s/op
+WorkloadWarmup   5: 1 op, 2193545827.75 ns, 2.1935 s/op
+WorkloadWarmup   6: 1 op, 2154249771.97 ns, 2.1542 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2178310092.48 ns, 2.1783 s/op
+WorkloadActual   2: 1 op, 2264510154.22 ns, 2.2645 s/op
+WorkloadActual   3: 1 op, 2275216542.88 ns, 2.2752 s/op
+WorkloadActual   4: 1 op, 2183654626.50 ns, 2.1837 s/op
+WorkloadActual   5: 1 op, 2216052040.13 ns, 2.2161 s/op
+WorkloadActual   6: 1 op, 2172468847.30 ns, 2.1725 s/op
+WorkloadActual   7: 1 op, 2191976633.90 ns, 2.1920 s/op
+WorkloadActual   8: 1 op, 2204142146.56 ns, 2.2041 s/op
+WorkloadActual   9: 1 op, 2194984837.46 ns, 2.1950 s/op
+WorkloadActual  10: 1 op, 2217044065.66 ns, 2.2170 s/op
+WorkloadActual  11: 1 op, 2181256835.72 ns, 2.1813 s/op
+WorkloadActual  12: 1 op, 2216236141.74 ns, 2.2162 s/op
+WorkloadActual  13: 1 op, 2213293588.99 ns, 2.2133 s/op
+WorkloadActual  14: 1 op, 2221075862.99 ns, 2.2211 s/op
+WorkloadActual  15: 1 op, 2208465880.44 ns, 2.2085 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 2178310092.48 ns, 2.1783 s/op
+WorkloadResult   2: 1 op, 2264510154.22 ns, 2.2645 s/op
+WorkloadResult   3: 1 op, 2183654626.50 ns, 2.1837 s/op
+WorkloadResult   4: 1 op, 2216052040.13 ns, 2.2161 s/op
+WorkloadResult   5: 1 op, 2172468847.30 ns, 2.1725 s/op
+WorkloadResult   6: 1 op, 2191976633.90 ns, 2.1920 s/op
+WorkloadResult   7: 1 op, 2204142146.56 ns, 2.2041 s/op
+WorkloadResult   8: 1 op, 2194984837.46 ns, 2.1950 s/op
+WorkloadResult   9: 1 op, 2217044065.66 ns, 2.2170 s/op
+WorkloadResult  10: 1 op, 2181256835.72 ns, 2.1813 s/op
+WorkloadResult  11: 1 op, 2216236141.74 ns, 2.2162 s/op
+WorkloadResult  12: 1 op, 2213293588.99 ns, 2.2133 s/op
+WorkloadResult  13: 1 op, 2221075862.99 ns, 2.2211 s/op
+WorkloadResult  14: 1 op, 2208465880.44 ns, 2.2085 s/op
+
+// AfterAll
+// Benchmark Process 7112 has exited with code 0
+
+Mean = 2.2045 s, StdErr = 0.0063 s (0.29%); N = 14, StdDev = 0.0237 s
+Min = 2.1725 s, Q1 = 2.1837 s, Median = 2.2063 s, Q3 = 2.2162 s, Max = 2.2645 s
+IQR = 0.0326 s, LowerFence = 2.1348 s, UpperFence = 2.2651 s
+ConfidenceInterval = [2.1777 s; 2.2313 s] (CI 99.9%), Margin = 0.0268 s (1.22% of Mean)
+Skewness = 0.8, Kurtosis = 3.4, MValue = 2
+
+// **************************
+// Benchmark: BenchMarkFinder.NugetGetLargePayloadAsync: DefaultJob [IterationCount=100]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "dcc1a241-ade0-4dcf-88e0-7fe10b482017.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.NugetGetLargePayloadAsync(IterationCount: 100)" --job "Default" --benchmarkId 1 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\dcc1a241-ade0-4dcf-88e0-7fe10b482017\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 777752.48 ns, 777.7525 us/op
+WorkloadJitting  1: 1 op, 3720961742.34 ns, 3.7210 s/op
+
+WorkloadWarmup   1: 1 op, 2165921367.10 ns, 2.1659 s/op
+WorkloadWarmup   2: 1 op, 2124222212.60 ns, 2.1242 s/op
+WorkloadWarmup   3: 1 op, 2113745741.43 ns, 2.1137 s/op
+WorkloadWarmup   4: 1 op, 2151759511.33 ns, 2.1518 s/op
+WorkloadWarmup   5: 1 op, 2125458682.60 ns, 2.1255 s/op
+WorkloadWarmup   6: 1 op, 2170615539.13 ns, 2.1706 s/op
+WorkloadWarmup   7: 1 op, 2102882070.21 ns, 2.1029 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 2094515364.38 ns, 2.0945 s/op
+WorkloadActual   2: 1 op, 2118773754.76 ns, 2.1188 s/op
+WorkloadActual   3: 1 op, 2126770581.18 ns, 2.1268 s/op
+WorkloadActual   4: 1 op, 2157592934.30 ns, 2.1576 s/op
+WorkloadActual   5: 1 op, 2138424576.31 ns, 2.1384 s/op
+WorkloadActual   6: 1 op, 2136106125.22 ns, 2.1361 s/op
+WorkloadActual   7: 1 op, 2135778988.67 ns, 2.1358 s/op
+WorkloadActual   8: 1 op, 2153782394.13 ns, 2.1538 s/op
+WorkloadActual   9: 1 op, 2157584832.71 ns, 2.1576 s/op
+WorkloadActual  10: 1 op, 2173062218.80 ns, 2.1731 s/op
+WorkloadActual  11: 1 op, 2195057193.02 ns, 2.1951 s/op
+WorkloadActual  12: 1 op, 2173191285.48 ns, 2.1732 s/op
+WorkloadActual  13: 1 op, 2139867497.13 ns, 2.1399 s/op
+WorkloadActual  14: 1 op, 2180234638.76 ns, 2.1802 s/op
+WorkloadActual  15: 1 op, 2103218705.17 ns, 2.1032 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 2094515364.38 ns, 2.0945 s/op
+WorkloadResult   2: 1 op, 2118773754.76 ns, 2.1188 s/op
+WorkloadResult   3: 1 op, 2126770581.18 ns, 2.1268 s/op
+WorkloadResult   4: 1 op, 2157592934.30 ns, 2.1576 s/op
+WorkloadResult   5: 1 op, 2138424576.31 ns, 2.1384 s/op
+WorkloadResult   6: 1 op, 2136106125.22 ns, 2.1361 s/op
+WorkloadResult   7: 1 op, 2135778988.67 ns, 2.1358 s/op
+WorkloadResult   8: 1 op, 2153782394.13 ns, 2.1538 s/op
+WorkloadResult   9: 1 op, 2157584832.71 ns, 2.1576 s/op
+WorkloadResult  10: 1 op, 2173062218.80 ns, 2.1731 s/op
+WorkloadResult  11: 1 op, 2195057193.02 ns, 2.1951 s/op
+WorkloadResult  12: 1 op, 2173191285.48 ns, 2.1732 s/op
+WorkloadResult  13: 1 op, 2139867497.13 ns, 2.1399 s/op
+WorkloadResult  14: 1 op, 2180234638.76 ns, 2.1802 s/op
+WorkloadResult  15: 1 op, 2103218705.17 ns, 2.1032 s/op
+
+// AfterAll
+// Benchmark Process 4300 has exited with code 0
+
+Mean = 2.1456 s, StdErr = 0.0073 s (0.34%); N = 15, StdDev = 0.0284 s
+Min = 2.0945 s, Q1 = 2.1268 s, Median = 2.1399 s, Q3 = 2.1731 s, Max = 2.1951 s
+IQR = 0.0463 s, LowerFence = 2.0573 s, UpperFence = 2.2425 s
+ConfidenceInterval = [2.1153 s; 2.1759 s] (CI 99.9%), Margin = 0.0303 s (1.41% of Mean)
+Skewness = -0.09, Kurtosis = 1.99, MValue = 2
+
+// **************************
+// Benchmark: BenchMarkFinder.NugetGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "dcc1a241-ade0-4dcf-88e0-7fe10b482017.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.NugetGetSmallPayloadAsync(IterationCount: 200)" --job "Default" --benchmarkId 2 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\dcc1a241-ade0-4dcf-88e0-7fe10b482017\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 1159365.23 ns, 1.1594 ms/op
+WorkloadJitting  1: 1 op, 5996466590.03 ns, 5.9965 s/op
+
+WorkloadWarmup   1: 1 op, 4317324967.28 ns, 4.3173 s/op
+WorkloadWarmup   2: 1 op, 4372068517.09 ns, 4.3721 s/op
+WorkloadWarmup   3: 1 op, 4322012434.54 ns, 4.3220 s/op
+WorkloadWarmup   4: 1 op, 4336840855.47 ns, 4.3368 s/op
+WorkloadWarmup   5: 1 op, 4354161771.96 ns, 4.3542 s/op
+WorkloadWarmup   6: 1 op, 4334929159.99 ns, 4.3349 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 4283730753.49 ns, 4.2837 s/op
+WorkloadActual   2: 1 op, 4302845752.74 ns, 4.3028 s/op
+WorkloadActual   3: 1 op, 4315791252.80 ns, 4.3158 s/op
+WorkloadActual   4: 1 op, 4289464722.47 ns, 4.2895 s/op
+WorkloadActual   5: 1 op, 4287471173.01 ns, 4.2875 s/op
+WorkloadActual   6: 1 op, 4247243155.21 ns, 4.2472 s/op
+WorkloadActual   7: 1 op, 4317499011.75 ns, 4.3175 s/op
+WorkloadActual   8: 1 op, 4351638825.60 ns, 4.3516 s/op
+WorkloadActual   9: 1 op, 4389713776.47 ns, 4.3897 s/op
+WorkloadActual  10: 1 op, 4309910058.40 ns, 4.3099 s/op
+WorkloadActual  11: 1 op, 4296094336.01 ns, 4.2961 s/op
+WorkloadActual  12: 1 op, 4303260889.30 ns, 4.3033 s/op
+WorkloadActual  13: 1 op, 4327569006.68 ns, 4.3276 s/op
+WorkloadActual  14: 1 op, 4312302261.88 ns, 4.3123 s/op
+WorkloadActual  15: 1 op, 4345469047.04 ns, 4.3455 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 4283730753.49 ns, 4.2837 s/op
+WorkloadResult   2: 1 op, 4302845752.74 ns, 4.3028 s/op
+WorkloadResult   3: 1 op, 4315791252.80 ns, 4.3158 s/op
+WorkloadResult   4: 1 op, 4289464722.47 ns, 4.2895 s/op
+WorkloadResult   5: 1 op, 4287471173.01 ns, 4.2875 s/op
+WorkloadResult   6: 1 op, 4247243155.21 ns, 4.2472 s/op
+WorkloadResult   7: 1 op, 4317499011.75 ns, 4.3175 s/op
+WorkloadResult   8: 1 op, 4351638825.60 ns, 4.3516 s/op
+WorkloadResult   9: 1 op, 4309910058.40 ns, 4.3099 s/op
+WorkloadResult  10: 1 op, 4296094336.01 ns, 4.2961 s/op
+WorkloadResult  11: 1 op, 4303260889.30 ns, 4.3033 s/op
+WorkloadResult  12: 1 op, 4327569006.68 ns, 4.3276 s/op
+WorkloadResult  13: 1 op, 4312302261.88 ns, 4.3123 s/op
+WorkloadResult  14: 1 op, 4345469047.04 ns, 4.3455 s/op
+
+// AfterAll
+// Benchmark Process 10452 has exited with code 0
+
+Mean = 4.3064 s, StdErr = 0.0071 s (0.16%); N = 14, StdDev = 0.0264 s
+Min = 4.2472 s, Q1 = 4.2895 s, Median = 4.3066 s, Q3 = 4.3175 s, Max = 4.3516 s
+IQR = 0.0280 s, LowerFence = 4.2474 s, UpperFence = 4.3596 s
+ConfidenceInterval = [4.2767 s; 4.3362 s] (CI 99.9%), Margin = 0.0298 s (0.69% of Mean)
+Skewness = -0.27, Kurtosis = 2.86, MValue = 2
+
+// **************************
+// Benchmark: BenchMarkFinder.NugetGetLargePayloadAsync: DefaultJob [IterationCount=200]
+// *** Execute ***
+// Launch: 1 / 1
+// Execute: dotnet "dcc1a241-ade0-4dcf-88e0-7fe10b482017.dll" --benchmarkName "GetDataCilent.BenchMarkFinder.NugetGetLargePayloadAsync(IterationCount: 200)" --job "Default" --benchmarkId 3 in C:\Users\Administrator\source\repos\Grpc_Rest_Nuget\GetDataCilent\GetDataCilent\bin\Release\netcoreapp3.0\dcc1a241-ade0-4dcf-88e0-7fe10b482017\bin\Release\netcoreapp3.0
+// BeforeAnythingElse
+
+// Benchmark Process Environment Information:
+// Runtime=.NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+// GC=Concurrent Workstation
+// Job: DefaultJob
+
+OverheadJitting  1: 1 op, 703441.36 ns, 703.4414 us/op
+WorkloadJitting  1: 1 op, 6128303457.56 ns, 6.1283 s/op
+
+WorkloadWarmup   1: 1 op, 4276153812.84 ns, 4.2762 s/op
+WorkloadWarmup   2: 1 op, 4243616437.28 ns, 4.2436 s/op
+WorkloadWarmup   3: 1 op, 4255250876.86 ns, 4.2553 s/op
+WorkloadWarmup   4: 1 op, 4325783863.59 ns, 4.3258 s/op
+WorkloadWarmup   5: 1 op, 4288497281.08 ns, 4.2885 s/op
+WorkloadWarmup   6: 1 op, 4270191602.56 ns, 4.2702 s/op
+WorkloadWarmup   7: 1 op, 4275363488.94 ns, 4.2754 s/op
+WorkloadWarmup   8: 1 op, 4161397049.07 ns, 4.1614 s/op
+
+// BeforeActualRun
+WorkloadActual   1: 1 op, 4267633735.57 ns, 4.2676 s/op
+WorkloadActual   2: 1 op, 4210042058.42 ns, 4.2100 s/op
+WorkloadActual   3: 1 op, 4271344821.76 ns, 4.2713 s/op
+WorkloadActual   4: 1 op, 4333151559.77 ns, 4.3332 s/op
+WorkloadActual   5: 1 op, 4378546994.10 ns, 4.3785 s/op
+WorkloadActual   6: 1 op, 4317220484.73 ns, 4.3172 s/op
+WorkloadActual   7: 1 op, 4286498144.32 ns, 4.2865 s/op
+WorkloadActual   8: 1 op, 4255666292.78 ns, 4.2557 s/op
+WorkloadActual   9: 1 op, 4254508045.02 ns, 4.2545 s/op
+WorkloadActual  10: 1 op, 4310201156.85 ns, 4.3102 s/op
+WorkloadActual  11: 1 op, 4295471072.44 ns, 4.2955 s/op
+WorkloadActual  12: 1 op, 4223802466.51 ns, 4.2238 s/op
+WorkloadActual  13: 1 op, 4243171688.02 ns, 4.2432 s/op
+WorkloadActual  14: 1 op, 4280200695.90 ns, 4.2802 s/op
+WorkloadActual  15: 1 op, 4264820528.87 ns, 4.2648 s/op
+
+// AfterActualRun
+WorkloadResult   1: 1 op, 4267633735.57 ns, 4.2676 s/op
+WorkloadResult   2: 1 op, 4210042058.42 ns, 4.2100 s/op
+WorkloadResult   3: 1 op, 4271344821.76 ns, 4.2713 s/op
+WorkloadResult   4: 1 op, 4333151559.77 ns, 4.3332 s/op
+WorkloadResult   5: 1 op, 4378546994.10 ns, 4.3785 s/op
+WorkloadResult   6: 1 op, 4317220484.73 ns, 4.3172 s/op
+WorkloadResult   7: 1 op, 4286498144.32 ns, 4.2865 s/op
+WorkloadResult   8: 1 op, 4255666292.78 ns, 4.2557 s/op
+WorkloadResult   9: 1 op, 4254508045.02 ns, 4.2545 s/op
+WorkloadResult  10: 1 op, 4310201156.85 ns, 4.3102 s/op
+WorkloadResult  11: 1 op, 4295471072.44 ns, 4.2955 s/op
+WorkloadResult  12: 1 op, 4223802466.51 ns, 4.2238 s/op
+WorkloadResult  13: 1 op, 4243171688.02 ns, 4.2432 s/op
+WorkloadResult  14: 1 op, 4280200695.90 ns, 4.2802 s/op
+WorkloadResult  15: 1 op, 4264820528.87 ns, 4.2648 s/op
+
+// AfterAll
+// Benchmark Process 6392 has exited with code 0
+
+Mean = 4.2795 s, StdErr = 0.0112 s (0.26%); N = 15, StdDev = 0.0433 s
+Min = 4.2100 s, Q1 = 4.2545 s, Median = 4.2713 s, Q3 = 4.3102 s, Max = 4.3785 s
+IQR = 0.0557 s, LowerFence = 4.1710 s, UpperFence = 4.3937 s
+ConfidenceInterval = [4.2332 s; 4.3258 s] (CI 99.9%), Margin = 0.0463 s (1.08% of Mean)
+Skewness = 0.51, Kurtosis = 2.72, MValue = 2
+
+// ***** BenchmarkRunner: Finish  *****
+
+// * Export *
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.csv
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report-github.md
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.html
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.asciidoc
+  BenchmarkDotNet.Artifacts\results\GetDataCilent.BenchMarkFinder-report.csv
+
+// * Detailed results *
+BenchMarkFinder.NugetGetSmallPayloadAsync: DefaultJob [IterationCount=100]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 2.2045 s, StdErr = 0.0063 s (0.29%); N = 14, StdDev = 0.0237 s
+Min = 2.1725 s, Q1 = 2.1837 s, Median = 2.2063 s, Q3 = 2.2162 s, Max = 2.2645 s
+IQR = 0.0326 s, LowerFence = 2.1348 s, UpperFence = 2.2651 s
+ConfidenceInterval = [2.1777 s; 2.2313 s] (CI 99.9%), Margin = 0.0268 s (1.22% of Mean)
+Skewness = 0.8, Kurtosis = 3.4, MValue = 2
+-------------------- Histogram --------------------
+[2.164 s ; 2.273 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+BenchMarkFinder.NugetGetLargePayloadAsync: DefaultJob [IterationCount=100]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 2.1456 s, StdErr = 0.0073 s (0.34%); N = 15, StdDev = 0.0284 s
+Min = 2.0945 s, Q1 = 2.1268 s, Median = 2.1399 s, Q3 = 2.1731 s, Max = 2.1951 s
+IQR = 0.0463 s, LowerFence = 2.0573 s, UpperFence = 2.2425 s
+ConfidenceInterval = [2.1153 s; 2.1759 s] (CI 99.9%), Margin = 0.0303 s (1.41% of Mean)
+Skewness = -0.09, Kurtosis = 1.99, MValue = 2
+-------------------- Histogram --------------------
+[2.084 s ; 2.155 s) | @@@@@@@@@
+[2.155 s ; 2.205 s) | @@@@@@
+---------------------------------------------------
+
+BenchMarkFinder.NugetGetSmallPayloadAsync: DefaultJob [IterationCount=200]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 4.3064 s, StdErr = 0.0071 s (0.16%); N = 14, StdDev = 0.0264 s
+Min = 4.2472 s, Q1 = 4.2895 s, Median = 4.3066 s, Q3 = 4.3175 s, Max = 4.3516 s
+IQR = 0.0280 s, LowerFence = 4.2474 s, UpperFence = 4.3596 s
+ConfidenceInterval = [4.2767 s; 4.3362 s] (CI 99.9%), Margin = 0.0298 s (0.69% of Mean)
+Skewness = -0.27, Kurtosis = 2.86, MValue = 2
+-------------------- Histogram --------------------
+[4.238 s ; 4.353 s) | @@@@@@@@@@@@@@
+---------------------------------------------------
+
+BenchMarkFinder.NugetGetLargePayloadAsync: DefaultJob [IterationCount=200]
+Runtime = .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT; GC = Concurrent Workstation
+Mean = 4.2795 s, StdErr = 0.0112 s (0.26%); N = 15, StdDev = 0.0433 s
+Min = 4.2100 s, Q1 = 4.2545 s, Median = 4.2713 s, Q3 = 4.3102 s, Max = 4.3785 s
+IQR = 0.0557 s, LowerFence = 4.1710 s, UpperFence = 4.3937 s
+ConfidenceInterval = [4.2332 s; 4.3258 s] (CI 99.9%), Margin = 0.0463 s (1.08% of Mean)
+Skewness = 0.51, Kurtosis = 2.72, MValue = 2
+-------------------- Histogram --------------------
+[4.195 s ; 4.394 s) | @@@@@@@@@@@@@@@
+---------------------------------------------------
+
+// * Summary *
+
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.17763.316 (1809/October2018Update/Redstone5)
+Intel Xeon Platinum 8259CL CPU 2.50GHz, 1 CPU, 2 logical cores and 1 physical core
+Frequency=3579545 Hz, Resolution=279.3651 ns, Timer=ACPI
+.NET Core SDK=3.0.100
+  [Host]     : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+  DefaultJob : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+
+
+|                    Method | IterationCount |    Mean |    Error |   StdDev |
+|-------------------------- |--------------- |--------:|---------:|---------:|
+| NugetGetSmallPayloadAsync |            100 | 2.205 s | 0.0268 s | 0.0237 s |
+| NugetGetLargePayloadAsync |            100 | 2.146 s | 0.0303 s | 0.0284 s |
+| NugetGetSmallPayloadAsync |            200 | 4.306 s | 0.0298 s | 0.0264 s |
+| NugetGetLargePayloadAsync |            200 | 4.279 s | 0.0463 s | 0.0433 s |
+
+// * Hints *
+Outliers
+  BenchMarkFinder.NugetGetSmallPayloadAsync: Default -> 1 outlier  was  removed (2.28 s)
+  BenchMarkFinder.NugetGetSmallPayloadAsync: Default -> 1 outlier  was  removed (4.39 s)
+
+// * Legends *
+  IterationCount : Value of the 'IterationCount' parameter
+  Mean           : Arithmetic mean of all measurements
+  Error          : Half of 99.9% confidence interval
+  StdDev         : Standard deviation of all measurements
+  1 s            : 1 Second (1 sec)
+
+// ***** BenchmarkRunner: End *****
+// ** Remained 0 benchmark(s) to run **
+Run time: 00:05:51 (351.6 sec), executed benchmarks: 4
+
+Global total time: 00:06:47 (407.65 sec), executed benchmarks: 4
+// * Artifacts cleanup *

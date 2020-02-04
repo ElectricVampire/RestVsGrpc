@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='utf-8' />
+<title>GetDataCilent.BenchMarkFinder-20200112-145425</title>
+
+<style type="text/css">
+	table { border-collapse: collapse; display: block; width: 100%; overflow: auto; }
+	td, th { padding: 6px 13px; border: 1px solid #ddd; text-align: right; }
+	tr { background-color: #fff; border-top: 1px solid #ccc; }
+	tr:nth-child(even) { background: #f8f8f8; }
+</style>
+</head>
+<body>
+<pre><code>
+BenchmarkDotNet=v0.12.0, OS=Windows 10.0.17763.316 (1809/October2018Update/Redstone5)
+Intel Xeon Platinum 8259CL CPU 2.50GHz, 1 CPU, 2 logical cores and 1 physical core
+Frequency=3579545 Hz, Resolution=279.3651 ns, Timer=ACPI
+.NET Core SDK=3.0.100
+  [Host]     : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+  DefaultJob : .NET Core 3.0.0 (CoreCLR 4.700.19.46205, CoreFX 4.700.19.46214), X64 RyuJIT
+</code></pre>
+<pre><code></code></pre>
+
+<table>
+<thead><tr><th>             Method</th><th>IterationCount</th><th>Mean</th><th>Error</th><th>StdDev</th>
+</tr>
+</thead><tbody><tr><td>RestGetSmallPayloadAsync</td><td>100</td><td>4.273 s</td><td>0.0844 s</td><td>0.1036 s</td>
+</tr><tr><td>RestGetLargePayloadAsync</td><td>100</td><td>4.153 s</td><td>0.0437 s</td><td>0.0365 s</td>
+</tr><tr><td>GrpcGetSmallPayloadAsync</td><td>100</td><td>5.543 s</td><td>0.1076 s</td><td>0.1361 s</td>
+</tr><tr><td>GrpcGetLargePayloadAsync</td><td>100</td><td>5.443 s</td><td>0.0607 s</td><td>0.0538 s</td>
+</tr><tr><td>NugetGetSmallPayloadAsync</td><td>100</td><td>1.849 s</td><td>0.0331 s</td><td>0.0277 s</td>
+</tr><tr><td>NugetGetLargePayloadAsync</td><td>100</td><td>1.820 s</td><td>0.0202 s</td><td>0.0189 s</td>
+</tr><tr><td>RestGetSmallPayloadAsync</td><td>200</td><td>8.206 s</td><td>0.1588 s</td><td>0.1326 s</td>
+</tr><tr><td>RestGetLargePayloadAsync</td><td>200</td><td>8.310 s</td><td>0.1635 s</td><td>0.1946 s</td>
+</tr><tr><td>GrpcGetSmallPayloadAsync</td><td>200</td><td>10.966 s</td><td>0.2181 s</td><td>0.2240 s</td>
+</tr><tr><td>GrpcGetLargePayloadAsync</td><td>200</td><td>11.140 s</td><td>0.2402 s</td><td>0.3123 s</td>
+</tr><tr><td>NugetGetSmallPayloadAsync</td><td>200</td><td>3.729 s</td><td>0.0460 s</td><td>0.0430 s</td>
+</tr><tr><td>NugetGetLargePayloadAsync</td><td>200</td><td>3.697 s</td><td>0.0456 s</td><td>0.0381 s</td>
+</tr><tr><td>RestGetSmallPayloadAsync</td><td>300</td><td>12.570 s</td><td>0.1306 s</td><td>0.1019 s</td>
+</tr><tr><td>RestGetLargePayloadAsync</td><td>300</td><td>12.560 s</td><td>0.2481 s</td><td>0.2321 s</td>
+</tr><tr><td>GrpcGetSmallPayloadAsync</td><td>300</td><td>16.543 s</td><td>0.2783 s</td><td>0.2603 s</td>
+</tr><tr><td>GrpcGetLargePayloadAsync</td><td>300</td><td>16.510 s</td><td>0.3631 s</td><td>0.3396 s</td>
+</tr><tr><td>NugetGetSmallPayloadAsync</td><td>300</td><td>5.554 s</td><td>0.0906 s</td><td>0.0757 s</td>
+</tr><tr><td>NugetGetLargePayloadAsync</td><td>300</td><td>5.517 s</td><td>0.0843 s</td><td>0.0789 s</td>
+</tr><tr><td>RestGetSmallPayloadAsync</td><td>500</td><td>20.886 s</td><td>0.2731 s</td><td>0.2421 s</td>
+</tr><tr><td>RestGetLargePayloadAsync</td><td>500</td><td>20.901 s</td><td>0.4173 s</td><td>0.3903 s</td>
+</tr><tr><td>GrpcGetSmallPayloadAsync</td><td>500</td><td>27.709 s</td><td>0.3391 s</td><td>0.3172 s</td>
+</tr><tr><td>GrpcGetLargePayloadAsync</td><td>500</td><td>29.791 s</td><td>0.5923 s</td><td>1.0680 s</td>
+</tr><tr><td>NugetGetSmallPayloadAsync</td><td>500</td><td>9.233 s</td><td>0.1325 s</td><td>0.1240 s</td>
+</tr><tr><td>NugetGetLargePayloadAsync</td><td>500</td><td>9.261 s</td><td>0.0857 s</td><td>0.0801 s</td>
+</tr><tr><td>RestGetSmallPayloadAsync</td><td>800</td><td>33.665 s</td><td>0.5898 s</td><td>0.5517 s</td>
+</tr><tr><td>RestGetLargePayloadAsync</td><td>800</td><td>36.857 s</td><td>0.7047 s</td><td>0.6921 s</td>
+</tr><tr><td>GrpcGetSmallPayloadAsync</td><td>800</td><td>50.699 s</td><td>0.5267 s</td><td>0.4927 s</td>
+</tr><tr><td>GrpcGetLargePayloadAsync</td><td>800</td><td>50.802 s</td><td>0.6375 s</td><td>0.5963 s</td>
+</tr><tr><td>NugetGetSmallPayloadAsync</td><td>800</td><td>15.205 s</td><td>0.1965 s</td><td>0.1838 s</td>
+</tr><tr><td>NugetGetLargePayloadAsync</td><td>800</td><td>15.198 s</td><td>0.1633 s</td><td>0.1528 s</td>
+</tr><tr><td>RestGetSmallPayloadAsync</td><td>1000</td><td>46.187 s</td><td>0.7215 s</td><td>0.6396 s</td>
+</tr><tr><td>RestGetLargePayloadAsync</td><td>1000</td><td>45.907 s</td><td>0.8865 s</td><td>0.8293 s</td>
+</tr><tr><td>GrpcGetSmallPayloadAsync</td><td>1000</td><td>63.339 s</td><td>0.8313 s</td><td>0.7776 s</td>
+</tr><tr><td>GrpcGetLargePayloadAsync</td><td>1000</td><td>62.562 s</td><td>0.5007 s</td><td>0.4683 s</td>
+</tr><tr><td>NugetGetSmallPayloadAsync</td><td>1000</td><td>18.881 s</td><td>0.2120 s</td><td>0.1879 s</td>
+</tr><tr><td>NugetGetLargePayloadAsync</td><td>1000</td><td>19.100 s</td><td>0.1349 s</td><td>0.1196 s</td>
+</tr><tr><td>RestGetSmallPayloadAsync</td><td>1300</td><td>60.089 s</td><td>1.0423 s</td><td>0.9240 s</td>
+</tr><tr><td>RestGetLargePayloadAsync</td><td>1300</td><td>59.419 s</td><td>0.8330 s</td><td>0.7792 s</td>
+</tr><tr><td>GrpcGetSmallPayloadAsync</td><td>1300</td><td>82.088 s</td><td>0.5295 s</td><td>0.4953 s</td>
+</tr><tr><td>GrpcGetLargePayloadAsync</td><td>1300</td><td>82.289 s</td><td>0.7383 s</td><td>0.6906 s</td>
+</tr><tr><td>NugetGetSmallPayloadAsync</td><td>1300</td><td>25.005 s</td><td>0.1792 s</td><td>0.1677 s</td>
+</tr><tr><td>NugetGetLargePayloadAsync</td><td>1300</td><td>24.691 s</td><td>0.2189 s</td><td>0.2048 s</td>
+</tr></tbody></table>
+</body>
+</html>

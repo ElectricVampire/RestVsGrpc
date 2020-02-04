@@ -1,0 +1,37 @@
+syntax = "proto3";
+import "google/protobuf/timestamp.proto";
+option csharp_namespace = "GrpcService";
+
+package GrpcDataRepoService;
+
+// The greeting service definition.
+service GrpcDataRepo {
+  // Sends a greeting
+  rpc GetData (Request) returns (MeteoriteLandingList);
+}
+
+message Request {
+   string payLoadSize = 1;
+}
+
+message GeoLocation {
+	string type = 1;
+	repeated double coordinates = 2;
+}
+
+message MeteoriteLanding {
+	uint32 id = 1;
+	string name = 2;
+	string fall = 3;
+	GeoLocation geolocation = 4;
+	double mass = 5;
+	string nametype = 6;
+	string recclass = 7;
+	double reclat = 8;
+	double reclong = 9;
+	google.protobuf.Timestamp year = 10;
+}
+
+message MeteoriteLandingList {
+	repeated MeteoriteLanding MeteoriteLandings = 1;
+}
